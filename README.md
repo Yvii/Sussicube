@@ -1,0 +1,2 @@
+# Sussicube
+Sussicube Super Game!
