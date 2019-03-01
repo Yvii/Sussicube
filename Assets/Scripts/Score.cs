@@ -6,7 +6,7 @@ public class Score : MonoBehaviour
 
     public Transform player;
     public Text scoretext;
-    private float score = 0;
+    private static float score = 0;
     private float playerStartZPosition;
 
     void Start()
@@ -27,6 +27,11 @@ public class Score : MonoBehaviour
     public void ChangeTextToRed()
     {
         scoretext.color = Color.red;
+    }
+
+    public static float GetCurrentScore()
+    {
+        return score;
     }
 
 

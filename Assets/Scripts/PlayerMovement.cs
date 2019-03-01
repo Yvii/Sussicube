@@ -61,7 +61,12 @@ public class PlayerMovement : MonoBehaviour
         //Restart
         if (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.Return))
         {
-            FindObjectOfType<GameManager>().Restart();
+            //Avoid Restarting multiple Times per Buttonpress
+            if (Score.GetCurrentScore() >= 10)
+            {
+                FindObjectOfType<GameManager>().Restart();
+            }
+            
         }
 
         //Main Menu
