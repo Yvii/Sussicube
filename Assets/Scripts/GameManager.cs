@@ -16,6 +16,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //Super Hacky
+        //Todo: Variables for what Audio is currently playing
+        if (GameMonitor.instance.isCurrentLevelaPlayableLevel == true)
+        {
+            AudioManager.instance.StopMenuTheme();
+        }
+        
         AudioManager.instance.RestartLevelTheme();
     }
 
