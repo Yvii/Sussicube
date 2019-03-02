@@ -1316,6 +1316,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: '- Added brandnew UI
 
+    - New Level 5!
+
     - Sussicube now has Audio (You cant mute yet)
 
     - You can now load a Level directly from the Main Menu
@@ -1396,12 +1398,12 @@ MonoBehaviour:
   m_margin: {x: 6.567092, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 172228853}
-    characterCount: 203
+    characterCount: 218
     spriteCount: 0
-    spaceCount: 43
-    wordCount: 41
+    spaceCount: 47
+    wordCount: 45
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
