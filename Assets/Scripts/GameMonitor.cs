@@ -17,7 +17,10 @@ public class GameMonitor : MonoBehaviour
     public int currentAttempts = 1;
     public int[] attempts;
     public bool isCurrentLevelaPlayableLevel = false;
-    public string[] sceneType; 
+    public string[] sceneType;
+
+    private float AttemptRestartDelay = 0.5f;  //Can only increment Attempts every 2 secs
+    private float lastRestart;
 
     void Awake()
     {
@@ -31,6 +34,8 @@ public class GameMonitor : MonoBehaviour
             return;
         }
 
+        //Set Time to now
+        lastRestart = Time.time;
         DontDestroyOnLoad(gameObject);
 
         //Levelindex
@@ -76,12 +81,6 @@ public class GameMonitor : MonoBehaviour
         currentLevel = SceneManager.GetActiveScene().buildIndex;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -111,7 +110,13 @@ public class GameMonitor : MonoBehaviour
         //If Level is still the same but restarted
         else
         {
-            currentAttempts++;
+            //if the last Attemptsincrease was at least [Restart Delay] in the past
+            if (lastRestart + AttemptRestartDelay < Time.time)
+            {
+                currentAttempts++;
+                lastRestart = Time.time;
+            }
+            
         }
         currentLevel = SceneManager.GetActiveScene().buildIndex;
 
