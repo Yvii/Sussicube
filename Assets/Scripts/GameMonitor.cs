@@ -16,6 +16,7 @@ public class GameMonitor : MonoBehaviour
     public int currentLevel;
     public int currentAttempts = 1;
     public int[] attempts; //Stores Attempts needed for every Level
+
     public bool isCurrentLevelaPlayableLevel = false;
     public string[] sceneType;
 
