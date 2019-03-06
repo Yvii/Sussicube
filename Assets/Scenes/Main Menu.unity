@@ -5393,11 +5393,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 224844171941449260, guid: da130a2f9740d9b4eb9ac5d181a703e7,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224601646001754334, guid: da130a2f9740d9b4eb9ac5d181a703e7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7236,16 +7231,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114228284694334030, guid: da130a2f9740d9b4eb9ac5d181a703e7,
-        type: 3}
-      propertyPath: fadeIn
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114228284694334030, guid: da130a2f9740d9b4eb9ac5d181a703e7,
-        type: 3}
-      propertyPath: fadeOut
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 223331499761963176, guid: da130a2f9740d9b4eb9ac5d181a703e7,
         type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -7490,6 +7475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114935702130745542, guid: da130a2f9740d9b4eb9ac5d181a703e7,
+        type: 3}
+      propertyPath: URL
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da130a2f9740d9b4eb9ac5d181a703e7, type: 3}

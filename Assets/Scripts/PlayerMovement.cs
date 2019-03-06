@@ -70,10 +70,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Main Menu
-        if (Input.GetKey(KeyCode.Escape))
+        /*if (Input.GetKey(KeyCode.Escape))
         {
             FindObjectOfType<GameManager>().EscapeToMainMenu();
-        }
+        }*/
 
 
 
