@@ -15,7 +15,7 @@ public class CompleteLevelText : MonoBehaviour
         if (GameMonitor.instance.isCurrentLevelaPlayableLevel == true && txtLevel != null)
         {
             //txtLevel
-            txtLevel.text = "LEVEL: " + GameMonitor.instance.currentLevel.ToString("D2");
+            txtLevel.text = "LEVEL " + GameMonitor.instance.currentLevel.ToString("D2");
         }
     }
 }

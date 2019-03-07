@@ -18,4 +18,10 @@ public class PatchVersionControl : MonoBehaviour
             patchPanel.SetActive(true);
         }
     }
+
+    public string GetCurrentPatch()
+    {
+        return currentPatch;
+    }
+
 }
