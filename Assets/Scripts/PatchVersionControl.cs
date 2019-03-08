@@ -10,7 +10,7 @@ public class PatchVersionControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string lastestPatch = RemoteSettings.GetString("currentPatch"); // Latest Version
+        string lastestPatch = RemoteSettings.GetString("currentPatch" , currentPatch); // Latest Version
         Debug.Log("Remote Server: Newest Patch: " + lastestPatch);
 
         if (currentPatch != lastestPatch && lastestPatch != null)
