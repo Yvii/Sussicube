@@ -69,13 +69,6 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
-        //Main Menu
-        /*if (Input.GetKey(KeyCode.Escape))
-        {
-            FindObjectOfType<GameManager>().EscapeToMainMenu();
-        }*/
-
-
 
         if (rb.position.y < -5f)
         {

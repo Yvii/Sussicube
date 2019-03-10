@@ -13,7 +13,7 @@ public class PatchVersionControl : MonoBehaviour
         string lastestPatch = RemoteSettings.GetString("currentPatch" , currentPatch); // Latest Version
         Debug.Log("Remote Server: Newest Patch: " + lastestPatch);
 
-        if (currentPatch != lastestPatch && lastestPatch != null)
+        if (currentPatch != lastestPatch && lastestPatch != null && lastestPatch != "")
         {
             patchPanel.SetActive(true);
         }
