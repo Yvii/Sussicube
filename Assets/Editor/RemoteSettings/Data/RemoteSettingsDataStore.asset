@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rsKeyList:
   - key: currentPatch
-    value: 0.3
+    value: 0.3b
     type: string
