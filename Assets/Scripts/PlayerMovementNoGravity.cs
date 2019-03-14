@@ -1,26 +1,18 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementNoGravity : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public float forwardforce = 6000f;
-    public float sideforce = 100f;
+    public float forwardforce = 1000f;
+    public float sideforce = 500f;
     public float jumpforce = 1000f;
-    public float downforce = 0f;
-
-    public bool noGravityMode = false;
-
-    private bool isGrounded = false;
-   
-
+    public float downforce = 1000f;
+    
+    
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == ("Ground") && isGrounded == false)
-        {
-            isGrounded = true;
-            
-        }
+
     }
 
     // Update is called once per frame
@@ -43,29 +35,17 @@ public class PlayerMovement : MonoBehaviour
         //Jump
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey("w")) && jumpforce != 0)
         {
-            if (noGravityMode == false && isGrounded == false)
-            {
-                return;
-            }
 
-            if (noGravityMode)
-            {
-                rb.AddForce(0, jumpforce * Time.deltaTime, 0, ForceMode.VelocityChange);
-            }
-            else
-            {
-                rb.AddForce(0, jumpforce * Time.deltaTime, 0, ForceMode.Impulse);
-                isGrounded = false;
-            }
-
+            rb.AddForce(0, jumpforce * Time.deltaTime, 0, ForceMode.VelocityChange);
 
         }
 
-        //Down (only usable in noGravityMode)
-        if ((Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) && downforce != 0 && noGravityMode == true)
+        //Down
+        if ((Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) && downforce != 0)
         {
-            Debug.Log("Down Test");
+
             rb.AddForce(0, -downforce * Time.deltaTime, 0, ForceMode.VelocityChange);
+            //canUseDown = false;
 
         }
 
@@ -78,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 FindObjectOfType<GameManager>().Restart();
             }
-            
+
         }
 
 
@@ -86,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
         {
             //Play PlayerFalling Sound
             FindObjectOfType<GameManager>().EndGame("falling");
-
 
         }
 
