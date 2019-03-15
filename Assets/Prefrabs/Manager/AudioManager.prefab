@@ -50,7 +50,7 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 0
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: PlayerCollision1
     audioClip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
     volume: 0.8
@@ -78,28 +78,28 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 0
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: Level03_Music
     audioClip: {fileID: 8300000, guid: 7bfbb5f514fc403418bcc6c931c1ac72, type: 3}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: Level04_Music
     audioClip: {fileID: 8300000, guid: 90770506cbe244b4892aa112873c7233, type: 3}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: Level05_Music
     audioClip: {fileID: 8300000, guid: 0abd1b46f559d534b9ecf345dc1b3e94, type: 3}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
     source: {fileID: 0}
-    loop: 0
+    loop: 1
   - name: MainMenu_Music
     audioClip: {fileID: 8300000, guid: 01af8b93da6ede6478545099a792173d, type: 3}
     volume: 0.3
@@ -115,6 +115,13 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 1
   - name: Level06_Music
+    audioClip: {fileID: 8300000, guid: 33f6c71960b53e0449a5cc5c7643195f, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialBlend: 0
+    source: {fileID: 0}
+    loop: 1
+  - name: Level07_Music
     audioClip: {fileID: 8300000, guid: 97f5a65dda474424587cc414c6de95e3, type: 3}
     volume: 0.3
     pitch: 1
