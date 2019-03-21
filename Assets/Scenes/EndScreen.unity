@@ -1464,8 +1464,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Hey, also wegen der Alpha nochmal. Die ist jetzt vorbei!\nDanke nochmal
-    f\xFCrs Spielen! :)\nSpecial Shoutout an die Glitchercommunity\n\nCodewort: Rise
-    of Sussi\n"
+    f\xFCrs Spielen! :)\nSpecial Shoutout an Erschrecken f\xFCr das designen von Level
+    6\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1534,10 +1534,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -3.041748, w: 54.899597}
   m_textInfo:
     textComponent: {fileID: 1934660527}
-    characterCount: 155
+    characterCount: 151
     spriteCount: 0
-    spaceCount: 25
-    wordCount: 23
+    spaceCount: 27
+    wordCount: 24
     linkCount: 0
     lineCount: 5
     pageCount: 1
