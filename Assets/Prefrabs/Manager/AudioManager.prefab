@@ -128,3 +128,10 @@ MonoBehaviour:
     spatialBlend: 0
     source: {fileID: 0}
     loop: 1
+  - name: Level08_Music
+    audioClip: {fileID: 8300000, guid: f6d0f48f4585c79499304330539bf137, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialBlend: 0
+    source: {fileID: 0}
+    loop: 1
