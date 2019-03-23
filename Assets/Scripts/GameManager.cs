@@ -77,6 +77,13 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void LoadTestLevel()
+    {
+        //Load Scene
+        Debug.Log("Trying to load level 08");
+        SceneManager.LoadScene("Level08");
+    }
+
     public void EscapeToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
