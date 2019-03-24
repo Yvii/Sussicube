@@ -2919,16 +2919,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: levelCompleteUI
-      value: 
-      objectReference: {fileID: 211911705}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: analytics
-      value: 
-      objectReference: {fileID: 1684335958}
     - target: {fileID: 6889059363388231314, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2984,6 +2974,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: levelCompleteUI
+      value: 
+      objectReference: {fileID: 211911705}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: analytics
+      value: 
+      objectReference: {fileID: 1684335958}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8366769d4426c4186f3ba16e526623, type: 3}
 --- !u!1 &211911705 stripped
@@ -9249,16 +9249,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2446412192554290825, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+    - target: {fileID: 2815543834054569619, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
-      propertyPath: jumpforce
-      value: 0
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8083598614934264449, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
       propertyPath: score
       value: 
       objectReference: {fileID: 1210955840}
+    - target: {fileID: 4529395996635230089, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+        type: 3}
+      propertyPath: jumpforce
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 2446412192554290823, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
       propertyPath: m_TagString
@@ -9269,15 +9274,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9c7d985c1fad58f4a96d3f45e7dbc604, type: 2}
-    - target: {fileID: 2815543834054569619, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529395996635230089, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+    - target: {fileID: 2446412192554290825, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
       propertyPath: jumpforce
-      value: 2000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2446412192554290824, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
@@ -11239,7 +11239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sussicube now learned Superjump! fly Sussi fly!
+  m_Text: Sussicube learned SUPERjump!
 --- !u!222 &793936064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11926,7 +11926,12 @@ PrefabInstance:
     - target: {fileID: 2659989082091332206, guid: d2eca06280d64de4199f21045e055b9b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2659989082091332206, guid: d2eca06280d64de4199f21045e055b9b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2659989082091332193, guid: d2eca06280d64de4199f21045e055b9b,
         type: 3}
@@ -16727,11 +16732,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
-    - target: {fileID: 5873624759374285740, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1065471185}
     - target: {fileID: 5873624758646566868, guid: bafff6c170716584c8e5c0d13e2cdf05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16842,6 +16842,21 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 5873624760040864692, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873624759374285740, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1065471185}
+    - target: {fileID: 3852369879020926716, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4805680606850840752, guid: bafff6c170716584c8e5c0d13e2cdf05,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -16851,16 +16866,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3852369879020926716, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873624760040864692, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bafff6c170716584c8e5c0d13e2cdf05, type: 3}
