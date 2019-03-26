@@ -61,11 +61,7 @@ public class PlayerMovementNoGravity : MonoBehaviour
 
         }
 
-        //Load Secret Level
-        if (Input.GetKey(KeyCode.F8))
-        {
-            FindObjectOfType<GameManager>().LoadTestLevel();
-        }
+
 
 
         if (rb.position.y < -5f)
