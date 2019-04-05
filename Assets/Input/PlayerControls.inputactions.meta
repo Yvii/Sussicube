@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b5923e2e821547c4c86e7c7b2a76b66e
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: <root>
+    11400002: Cube/LoadSecretLevel
+    11400004: Cube/Move
+    11400006: Cube/Reset
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: e2fdc6edf8744b38b702a2a5ee3541b2, type: 3}
+  generateWrapperCode: 1
+  wrapperCodePath: 
+  wrapperClassName: 
+  wrapperCodeNamespace: 
+  generateActionEvents: 0
+  generateInterfaces: 0
+  actionGuids: []
+  actionMapGuids: []

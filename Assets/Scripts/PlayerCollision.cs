@@ -15,6 +15,7 @@ public class PlayerCollision : MonoBehaviour
         if (collisioninfo.collider.tag == "Obstacle")
         {
             score.ChangeTextToRed();
+            movement.movementAllowed = false;
             movement.enabled = false;
             //AudioManager.instance.RestartLevelTheme();
             AudioManager.instance.StopLevelTheme();
