@@ -111,6 +111,7 @@ MonoBehaviour:
   jumpforce: 0
   downforce: 0
   noGravityMode: 0
+  movementAllowed: 1
 --- !u!1 &2446412192554290823
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +123,7 @@ GameObject:
   - component: {fileID: 2446412192554290827}
   - component: {fileID: 2446412192554290826}
   - component: {fileID: 2446412192554290821}
+  - component: {fileID: 3654449595377947615}
   m_Layer: 0
   m_Name: PlayerGFX
   m_TagString: Untagged
@@ -188,3 +190,15 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3654449595377947615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446412192554290823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5e5f5f25b03bd489e3f221643b39ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

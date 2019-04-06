@@ -17,6 +17,7 @@ public class PlayerCollision : MonoBehaviour
             score.ChangeTextToRed();
             movement.movementAllowed = false;
             movement.enabled = false;
+            GetComponentInChildren<DissolveSphere>().Dissolve();
             //AudioManager.instance.RestartLevelTheme();
             AudioManager.instance.StopLevelTheme();
             AudioManager.instance.PlayRandomCollisionSound();
