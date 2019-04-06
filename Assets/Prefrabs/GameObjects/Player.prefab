@@ -78,7 +78,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls:
-    m_Asset: {fileID: 11400000, guid: b5923e2e821547c4c86e7c7b2a76b66e, type: 3}
+    m_Asset: {fileID: -944628639613478452, guid: b5923e2e821547c4c86e7c7b2a76b66e,
+      type: 3}
 --- !u!114 &8083598614934264449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +203,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5e5f5f25b03bd489e3f221643b39ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dissolvechance: 1

@@ -3,31 +3,44 @@
     "maps": [
         {
             "name": "Cube",
-            "id": "ea4cabe5-57ec-4bbe-b6b5-c195a31f527e",
+            "id": "b6af0d66-b3d4-4ea4-b123-5d276b33bb52",
             "actions": [
                 {
                     "name": "Move",
-                    "id": "a8f50f13-be23-49f8-92bb-b487f0e10fe8",
+                    "id": "20d059a3-bcb9-4ac6-a452-fa4747d0bf72",
                     "expectedControlLayout": "Vector2",
+                    "continuous": true,
+                    "passThrough": true,
+                    "processors": "",
+                    "interactions": "",
                     "bindings": []
                 },
                 {
                     "name": "Reset",
-                    "id": "bbb2c1a3-d4d2-405e-a9be-ed1644061ffb",
-                    "expectedControlLayout": "Button",
+                    "id": "aec6c514-71c0-4e6e-a985-4f04ca400fac",
+                    "expectedControlLayout": "",
+                    "continuous": false,
+                    "passThrough": true,
+                    "processors": "",
+                    "interactions": "",
                     "bindings": []
                 },
                 {
                     "name": "LoadSecretLevel",
-                    "id": "0bf55901-b45d-4080-b07e-e5c76a322d93",
+                    "id": "8fb36097-45bd-4698-ba85-d593089f962d",
                     "expectedControlLayout": "",
+                    "continuous": false,
+                    "passThrough": true,
+                    "processors": "",
+                    "interactions": "",
                     "bindings": []
                 }
             ],
             "bindings": [
                 {
                     "name": "WASD",
-                    "path": "Dpad",
+                    "id": "73e4902e-816c-48d7-b30e-13554e07cca3",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -39,10 +52,11 @@
                 },
                 {
                     "name": "up",
+                    "id": "f7010ea1-996a-4eed-9d54-8765db3e11af",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Move",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -51,10 +65,11 @@
                 },
                 {
                     "name": "down",
+                    "id": "500537e5-13fc-4d79-9b38-caa50729ba94",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Move",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -63,10 +78,11 @@
                 },
                 {
                     "name": "left",
+                    "id": "68fe24cb-373e-41bf-b7f5-ad5d9c27446e",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Move",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -75,10 +91,11 @@
                 },
                 {
                     "name": "right",
+                    "id": "afecb4c5-308c-49a5-8cc0-f69bd6771ec5",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Move",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -86,8 +103,9 @@
                     "modifiers": ""
                 },
                 {
-                    "name": "Dpad",
-                    "path": "Dpad",
+                    "name": "Arrow",
+                    "id": "9b70f2dd-eda7-497d-85fc-6f90f401d602",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -99,66 +117,7 @@
                 },
                 {
                     "name": "up",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard and Mouse",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "down",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard and Mouse",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "left",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard and Mouse",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "right",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard and Mouse",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "Space",
-                    "path": "Dpad",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": true,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
-                },
-                {
-                    "name": "up",
+                    "id": "17f17fed-6432-435e-8dd5-2da6e1e2c976",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -170,8 +129,22 @@
                     "modifiers": ""
                 },
                 {
+                    "name": "up",
+                    "id": "9a873995-8f17-4b28-972e-5da6f94abbe8",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
                     "name": "down",
-                    "path": "",
+                    "id": "91d0bb4a-eaa7-4608-862d-7b7754be671f",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -183,7 +156,8 @@
                 },
                 {
                     "name": "left",
-                    "path": "",
+                    "id": "41ac3df0-8f62-49f3-a342-a817d447d7da",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -195,7 +169,8 @@
                 },
                 {
                     "name": "right",
-                    "path": "",
+                    "id": "ce322715-9d15-41e3-bcfb-d0df89e5d71e",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -206,11 +181,12 @@
                     "modifiers": ""
                 },
                 {
-                    "name": "right",
+                    "name": "",
+                    "id": "90134ff1-7a63-4f0d-8388-5e9b7192e90b",
                     "path": "<Keyboard>/r",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Reset",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -218,11 +194,12 @@
                     "modifiers": ""
                 },
                 {
-                    "name": "right",
+                    "name": "",
+                    "id": "5a924da8-7617-4d98-b211-f6e45283eaaa",
                     "path": "<Keyboard>/enter",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "Reset",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -230,11 +207,12 @@
                     "modifiers": ""
                 },
                 {
-                    "name": "right",
+                    "name": "",
+                    "id": "969791f6-a472-4920-821b-795639e250cc",
                     "path": "<Keyboard>/f8",
-                    "interactions": "Hold(duration=3)",
+                    "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard and Mouse",
+                    "groups": "",
                     "action": "LoadSecretLevel",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -244,23 +222,5 @@
             ]
         }
     ],
-    "controlSchemes": [
-        {
-            "name": "Keyboard and Mouse",
-            "basedOn": "",
-            "bindingGroup": "Keyboard and Mouse",
-            "devices": [
-                {
-                    "devicePath": "<Keyboard>",
-                    "isOptional": false,
-                    "isOR": false
-                },
-                {
-                    "devicePath": "<Mouse>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        }
-    ]
+    "controlSchemes": []
 }

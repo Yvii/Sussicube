@@ -15,7 +15,7 @@ public class PlayerControls : InputActionAssetReference
         : base(asset)
     {
     }
-    private bool m_Initialized;
+    [NonSerialized] private bool m_Initialized;
     private void Initialize()
     {
         // Cube
@@ -27,6 +27,10 @@ public class PlayerControls : InputActionAssetReference
     }
     private void Uninitialize()
     {
+        if (m_CubeActionsCallbackInterface != null)
+        {
+            Cube.SetCallbacks(null);
+        }
         m_Cube = null;
         m_Cube_Move = null;
         m_Cube_Reset = null;
@@ -36,8 +40,10 @@ public class PlayerControls : InputActionAssetReference
     public void SetAsset(InputActionAsset newAsset)
     {
         if (newAsset == asset) return;
+        var CubeCallbacks = m_CubeActionsCallbackInterface;
         if (m_Initialized) Uninitialize();
         asset = newAsset;
+        Cube.SetCallbacks(CubeCallbacks);
     }
     public override void MakePrivateCopyOfActions()
     {
@@ -45,6 +51,7 @@ public class PlayerControls : InputActionAssetReference
     }
     // Cube
     private InputActionMap m_Cube;
+    private ICubeActions m_CubeActionsCallbackInterface;
     private InputAction m_Cube_Move;
     private InputAction m_Cube_Reset;
     private InputAction m_Cube_LoadSecretLevel;
@@ -61,6 +68,34 @@ public class PlayerControls : InputActionAssetReference
         public bool enabled { get { return Get().enabled; } }
         public InputActionMap Clone() { return Get().Clone(); }
         public static implicit operator InputActionMap(CubeActions set) { return set.Get(); }
+        public void SetCallbacks(ICubeActions instance)
+        {
+            if (m_Wrapper.m_CubeActionsCallbackInterface != null)
+            {
+                Move.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                Move.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                Move.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                Reset.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                Reset.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                Reset.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                LoadSecretLevel.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+                LoadSecretLevel.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+                LoadSecretLevel.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+            }
+            m_Wrapper.m_CubeActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                Move.started += instance.OnMove;
+                Move.performed += instance.OnMove;
+                Move.cancelled += instance.OnMove;
+                Reset.started += instance.OnReset;
+                Reset.performed += instance.OnReset;
+                Reset.cancelled += instance.OnReset;
+                LoadSecretLevel.started += instance.OnLoadSecretLevel;
+                LoadSecretLevel.performed += instance.OnLoadSecretLevel;
+                LoadSecretLevel.cancelled += instance.OnLoadSecretLevel;
+            }
+        }
     }
     public CubeActions @Cube
     {
@@ -70,14 +105,10 @@ public class PlayerControls : InputActionAssetReference
             return new CubeActions(this);
         }
     }
-    private int m_KeyboardandMouseSchemeIndex = -1;
-    public InputControlScheme KeyboardandMouseScheme
-    {
-        get
-
-        {
-            if (m_KeyboardandMouseSchemeIndex == -1) m_KeyboardandMouseSchemeIndex = asset.GetControlSchemeIndex("Keyboard and Mouse");
-            return asset.controlSchemes[m_KeyboardandMouseSchemeIndex];
-        }
-    }
+}
+public interface ICubeActions
+{
+    void OnMove(InputAction.CallbackContext context);
+    void OnReset(InputAction.CallbackContext context);
+    void OnLoadSecretLevel(InputAction.CallbackContext context);
 }
