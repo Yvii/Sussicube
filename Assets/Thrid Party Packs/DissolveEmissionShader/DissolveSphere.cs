@@ -8,7 +8,7 @@ public class DissolveSphere : MonoBehaviour
     Material mat;
     private bool dissolveInProcess;
 
-    public int dissolvechance = 1;
+    public int dissolveChanceInPercent = 1;
 
     private void Start()
     {
@@ -33,7 +33,7 @@ public class DissolveSphere : MonoBehaviour
         {
             int rnd = Random.Range(0, 100);
             Debug.Log(rnd);
-            if (rnd < dissolvechance)
+            if (rnd < dissolveChanceInPercent)
             {
                 dissolveInProcess = true;
             }
