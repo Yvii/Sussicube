@@ -105,6 +105,16 @@ public class PlayerControls : InputActionAssetReference
             return new CubeActions(this);
         }
     }
+    private int m_GamepadSchemeIndex = -1;
+    public InputControlScheme GamepadScheme
+    {
+        get
+
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.GetControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
+        }
+    }
 }
 public interface ICubeActions
 {

@@ -53,6 +53,32 @@
                 {
                     "name": "up",
                     "id": "17f17fed-6432-435e-8dd5-2da6e1e2c976",
+                    "path": "<DualShockGamepadHID>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "up",
+                    "id": "529a10ea-c70a-4e92-9c42-131bba1e470b",
+                    "path": "<XboxOneGamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "up",
+                    "id": "175ccb3f-c51f-4215-815c-d8919bb3360b",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -104,6 +130,32 @@
                 },
                 {
                     "name": "down",
+                    "id": "9736e94b-7b6f-400c-bbda-e4ce65ccde38",
+                    "path": "<DualShockGamepadHID>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "down",
+                    "id": "2be6d0f2-4537-48d4-9441-b606f150ce99",
+                    "path": "<XboxOneGamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "down",
                     "id": "0f647169-53c6-4386-8e1c-5a95ac149895",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -122,6 +174,32 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "left",
+                    "id": "5df9ae04-ede2-4446-9eed-efd890c03a62",
+                    "path": "<DualShockGamepadHID>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "left",
+                    "id": "11787950-14a5-4cd5-81df-891c145ae1dc",
+                    "path": "<XboxOneGamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Move",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -156,6 +234,32 @@
                 },
                 {
                     "name": "right",
+                    "id": "f8b32a36-e746-49b8-8d15-27ba8f2b7988",
+                    "path": "<DualShockGamepadHID>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "right",
+                    "id": "4e259bcc-5fae-4258-b6a5-a980869093a4",
+                    "path": "<XboxOneGamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": true,
+                    "modifiers": ""
+                },
+                {
+                    "name": "right",
                     "id": "561d0403-a1e6-4084-a3a5-8d1277a8b635",
                     "path": "<Keyboard>/d",
                     "interactions": "",
@@ -174,6 +278,45 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "Reset",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": false,
+                    "modifiers": ""
+                },
+                {
+                    "name": "",
+                    "id": "82f8cd70-ef83-4d91-aed9-5bd35ad1beca",
+                    "path": "<XboxOneGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Reset",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": false,
+                    "modifiers": ""
+                },
+                {
+                    "name": "",
+                    "id": "0bda56ed-8664-40d8-b55a-e91d5b97e24e",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Reset",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": false,
+                    "modifiers": ""
+                },
+                {
+                    "name": "",
+                    "id": "067e2460-a914-4aac-a2c0-576ef648cdc4",
+                    "path": "<DualShockGamepadHID>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "Reset",
                     "chainWithPrevious": false,
                     "isComposite": false,
@@ -209,5 +352,18 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Gamepad",
+            "basedOn": "",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
