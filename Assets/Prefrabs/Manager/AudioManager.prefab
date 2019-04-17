@@ -46,6 +46,8 @@ MonoBehaviour:
   sounds:
   - name: Level01_Music
     audioClip: {fileID: 8300000, guid: e302709325de49546992473a8a8939fc, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -53,6 +55,8 @@ MonoBehaviour:
     loop: 1
   - name: PlayerCollision1
     audioClip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+    audioMixerGroup: {fileID: -1697216407003866363, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.8
     pitch: 1
     spatialBlend: 0.6
@@ -60,6 +64,8 @@ MonoBehaviour:
     loop: 0
   - name: PlayerCollision2
     audioClip: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
+    audioMixerGroup: {fileID: -1697216407003866363, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.8
     pitch: 1
     spatialBlend: 0.6
@@ -67,6 +73,8 @@ MonoBehaviour:
     loop: 0
   - name: PlayerFallingDeath
     audioClip: {fileID: 8300000, guid: a235d590ef2a04d1b85b61ef4c21337c, type: 3}
+    audioMixerGroup: {fileID: -1697216407003866363, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.701
     pitch: 1
     spatialBlend: 0
@@ -74,6 +82,8 @@ MonoBehaviour:
     loop: 0
   - name: Level02_Music
     audioClip: {fileID: 8300000, guid: 76b53e46ff6ef6745931798de86f2bd4, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -81,6 +91,8 @@ MonoBehaviour:
     loop: 1
   - name: Level03_Music
     audioClip: {fileID: 8300000, guid: 7bfbb5f514fc403418bcc6c931c1ac72, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -88,6 +100,8 @@ MonoBehaviour:
     loop: 1
   - name: Level04_Music
     audioClip: {fileID: 8300000, guid: 90770506cbe244b4892aa112873c7233, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -95,6 +109,8 @@ MonoBehaviour:
     loop: 1
   - name: Level05_Music
     audioClip: {fileID: 8300000, guid: 0abd1b46f559d534b9ecf345dc1b3e94, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -102,6 +118,7 @@ MonoBehaviour:
     loop: 1
   - name: MainMenu_Music
     audioClip: {fileID: 8300000, guid: 01af8b93da6ede6478545099a792173d, type: 3}
+    audioMixerGroup: {fileID: 0}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -109,6 +126,8 @@ MonoBehaviour:
     loop: 1
   - name: EndScreen_Music
     audioClip: {fileID: 8300000, guid: d0b8b899f96cf2747b1d7d4b388b0e46, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -116,6 +135,8 @@ MonoBehaviour:
     loop: 1
   - name: Level06_Music
     audioClip: {fileID: 8300000, guid: 33f6c71960b53e0449a5cc5c7643195f, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -123,6 +144,8 @@ MonoBehaviour:
     loop: 1
   - name: Level07_Music
     audioClip: {fileID: 8300000, guid: 97f5a65dda474424587cc414c6de95e3, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
@@ -130,6 +153,8 @@ MonoBehaviour:
     loop: 1
   - name: Level08_Music
     audioClip: {fileID: 8300000, guid: f6d0f48f4585c79499304330539bf137, type: 3}
+    audioMixerGroup: {fileID: -2141014214020131965, guid: 42cf518d1c4293e418e49807cf06a821,
+      type: 2}
     volume: 0.3
     pitch: 1
     spatialBlend: 0
