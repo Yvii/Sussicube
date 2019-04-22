@@ -3740,7 +3740,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Rise of Sussi -'
+  m_Text: '- Easter Edition -'
 --- !u!222 &474492712
 CanvasRenderer:
   m_ObjectHideFlags: 0
