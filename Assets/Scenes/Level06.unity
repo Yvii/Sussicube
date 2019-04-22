@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4950565, g: 0.6830945, b: 0.95130295, a: 1}
+  m_IndirectSpecularColor: {r: 0.3530206, g: 0.57369876, b: 0.8686592, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5401,6 +5401,16 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 532043351}
+    - target: {fileID: 2446412192554290825, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+        type: 3}
+      propertyPath: jumpforce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446412192554290823, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4529395996635230089, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
       propertyPath: jumpforce
@@ -5411,13 +5421,19 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2446412192554290825, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+    - target: {fileID: 3387212937969401335, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
-      propertyPath: jumpforce
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4fa04a87617e249a8cee45bf7a56a5, type: 3}
+--- !u!95 &2446412191319107171 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3339295296550010503, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2446412191319107170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2659989083085682105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5687,16 +5703,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5873624760040864693, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5873624759374285740, guid: bafff6c170716584c8e5c0d13e2cdf05,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1252042985}
+    - target: {fileID: 5873624760040864693, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5873624758646566868, guid: bafff6c170716584c8e5c0d13e2cdf05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5905,16 +5921,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: levelCompleteUI
-      value: 
-      objectReference: {fileID: 1598067988}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: analytics
-      value: 
-      objectReference: {fileID: 2017093223}
     - target: {fileID: 6889059363388231314, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5970,6 +5976,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: levelCompleteUI
+      value: 
+      objectReference: {fileID: 1598067988}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: analytics
+      value: 
+      objectReference: {fileID: 2017093223}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 2446412191319107171}
     - target: {fileID: 5092235800865967106, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_EventPayload.m_Parameters.m_Parameters.Array.size

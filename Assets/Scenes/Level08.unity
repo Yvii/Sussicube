@@ -730,16 +730,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: levelCompleteUI
-      value: 
-      objectReference: {fileID: 211911705}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: analytics
-      value: 
-      objectReference: {fileID: 1118941293}
     - target: {fileID: 6889059363388231314, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -795,6 +785,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: levelCompleteUI
+      value: 
+      objectReference: {fileID: 211911705}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: analytics
+      value: 
+      objectReference: {fileID: 1118941293}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc8366769d4426c4186f3ba16e526623, type: 3}
 --- !u!1 &201280259 stripped
@@ -6276,16 +6276,6 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 3852369879020926716, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873624760040864692, guid: bafff6c170716584c8e5c0d13e2cdf05,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4805680606850840752, guid: bafff6c170716584c8e5c0d13e2cdf05,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -6295,6 +6285,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852369879020926716, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873624760040864692, guid: bafff6c170716584c8e5c0d13e2cdf05,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bafff6c170716584c8e5c0d13e2cdf05, type: 3}
@@ -10254,7 +10254,7 @@ MonoBehaviour:
   rb: {fileID: 2815543834493265178}
   forwardforce: 6000
   sideforce: 100
-  jumpforce: 500
+  jumpforce: 0
   downforce: 0
   noGravityMode: 0
   movementAllowed: 1

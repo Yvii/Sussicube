@@ -384,16 +384,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: levelCompleteUI
-      value: 
-      objectReference: {fileID: 211911705}
-    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
-        type: 3}
-      propertyPath: analytics
-      value: 
-      objectReference: {fileID: 824642679}
     - target: {fileID: 6889059363388231314, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -449,6 +439,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: levelCompleteUI
+      value: 
+      objectReference: {fileID: 211911705}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: analytics
+      value: 
+      objectReference: {fileID: 824642679}
+    - target: {fileID: 6889059363388231313, guid: dc8366769d4426c4186f3ba16e526623,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 652086154}
     - target: {fileID: 5092235800865967106, guid: dc8366769d4426c4186f3ba16e526623,
         type: 3}
       propertyPath: m_Trigger.m_ApplyRules
@@ -874,11 +879,6 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1210955839}
-    - target: {fileID: 2446412192554290823, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 2446412192554290825, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
         type: 3}
       propertyPath: m_Enabled
@@ -889,8 +889,19 @@ PrefabInstance:
       propertyPath: jumpforce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2446412192554290823, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b4fa04a87617e249a8cee45bf7a56a5, type: 3}
+--- !u!95 &652086154 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3339295296550010503, guid: 5b4fa04a87617e249a8cee45bf7a56a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 652086153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &767540911
 PrefabInstance:
   m_ObjectHideFlags: 0
