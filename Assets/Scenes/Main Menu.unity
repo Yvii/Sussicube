@@ -1685,16 +1685,21 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: '- New Level 6 + 7!
 
-    - Made the Level 5 Goal easier to hit
+    - Easter Event! Sussicube is now a Sussibunny
 
-    - Fixed Lighting Issue in Level 5
-
-    - New Input System with Gampad Support
+    - Added the Option to change Resolution and Graphic Settings before you launch
+    the Game
 
     - Added Volume Controls to Main Menu (Settings -> Audio)
 
+    - New Input System with Gampad Support
 
-    - Something strange is happening with Sussi..
+    - You can now Restart a Level immediately after dieing
+
+
+    - Made the Level 5 Goal easier to hit
+
+    - Fixed Lighting Issue in Level 5
 
 
 '
@@ -1743,7 +1748,7 @@ MonoBehaviour:
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 377
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1767,12 +1772,12 @@ MonoBehaviour:
   m_margin: {x: 6.567092, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 172228853}
-    characterCount: 235
+    characterCount: 378
     spriteCount: 0
-    spaceCount: 48
-    wordCount: 45
+    spaceCount: 74
+    wordCount: 71
     linkCount: 0
-    lineCount: 8
+    lineCount: 10
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
