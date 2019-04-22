@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.Input;
 
 public class LUI_PAK : MonoBehaviour {
 
@@ -15,7 +16,8 @@ public class LUI_PAK : MonoBehaviour {
 
 	void Update ()
 	{
-		if (Input.anyKeyDown) 
+        // Press any Key currently only works with keyboard or Mouse
+		if (Keyboard.current.anyKey.isPressed || Mouse.current.leftButton.isPressed) 
 		{
 			animatorComponent.Play (animName);
 			mainCanvas.SetActive(true);

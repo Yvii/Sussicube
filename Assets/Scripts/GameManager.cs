@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject levelCompleteUI;
     public GameAnalytics analytics;
     public TextMeshProUGUI txtLevel;
+    public Animator playerAnimator;  //Used to play Running/death Animations
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
             //Debug.Log("Game Over");
             DisableObstacleMovement();
             gameHasEnded = true;
+            playerAnimator.SetBool("isDead", true);
             //TODO: Deathvector
             analytics.LevelFailed(SceneManager.GetActiveScene().name, new Vector3(0, 0, 0));
             AudioManager.instance.StopLevelTheme();
@@ -75,6 +77,13 @@ public class GameManager : MonoBehaviour
         //Start Audio Level Theme
         AudioManager.instance.PlayLevelTheme();
 
+    }
+
+    public void LoadTestLevel()
+    {
+        //Load Scene
+        Debug.Log("Trying to load level 08");
+        SceneManager.LoadScene("Level08");
     }
 
     public void EscapeToMainMenu()

@@ -15,7 +15,17 @@ public class PlayerCollision : MonoBehaviour
         if (collisioninfo.collider.tag == "Obstacle")
         {
             score.ChangeTextToRed();
+            movement.movementAllowed = false;
             movement.enabled = false;
+            try
+            {
+                GetComponentInChildren<DissolveSphere>().Dissolve();
+            }
+            catch
+            {
+                Debug.LogWarning("Player does not have a dissolve Shader!");
+            }
+            
             //AudioManager.instance.RestartLevelTheme();
             AudioManager.instance.StopLevelTheme();
             AudioManager.instance.PlayRandomCollisionSound();
