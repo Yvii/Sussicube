@@ -7,33 +7,27 @@
             "actions": [
                 {
                     "name": "Move",
+                    "type": "PassThrough",
                     "id": "20d059a3-bcb9-4ac6-a452-fa4747d0bf72",
-                    "expectedControlLayout": "Vector2",
-                    "continuous": true,
-                    "passThrough": true,
+                    "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
-                    "bindings": []
+                    "interactions": ""
                 },
                 {
                     "name": "Reset",
+                    "type": "PassThrough",
                     "id": "aec6c514-71c0-4e6e-a985-4f04ca400fac",
-                    "expectedControlLayout": "",
-                    "continuous": false,
-                    "passThrough": true,
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
-                    "bindings": []
+                    "interactions": ""
                 },
                 {
                     "name": "LoadSecretLevel",
+                    "type": "PassThrough",
                     "id": "8fb36097-45bd-4698-ba85-d593089f962d",
-                    "expectedControlLayout": "",
-                    "continuous": false,
-                    "passThrough": true,
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
-                    "bindings": []
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -45,49 +39,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": true,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
-                },
-                {
-                    "name": "up",
-                    "id": "17f17fed-6432-435e-8dd5-2da6e1e2c976",
-                    "path": "<DualShockGamepadHID>/rightStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "up",
-                    "id": "529a10ea-c70a-4e92-9c42-131bba1e470b",
-                    "path": "<XboxOneGamepad>/rightStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
-                },
-                {
-                    "name": "up",
-                    "id": "175ccb3f-c51f-4215-815c-d8919bb3360b",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "chainWithPrevious": false,
-                    "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "up",
@@ -97,10 +50,41 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "17f17fed-6432-435e-8dd5-2da6e1e2c976",
+                    "path": "<DualShockGamepadHID>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "529a10ea-c70a-4e92-9c42-131bba1e470b",
+                    "path": "<XboxOneGamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "175ccb3f-c51f-4215-815c-d8919bb3360b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "up",
@@ -110,10 +94,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -123,10 +105,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -136,10 +116,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -149,10 +127,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "down",
@@ -162,10 +138,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
@@ -175,10 +149,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
@@ -188,10 +160,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
@@ -201,10 +171,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "left",
@@ -214,10 +182,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "right",
@@ -227,10 +193,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "right",
@@ -238,12 +202,10 @@
                     "path": "<DualShockGamepadHID>/rightStick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": ";Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "right",
@@ -253,10 +215,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "right",
@@ -266,10 +226,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": true,
-                    "modifiers": ""
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -279,10 +237,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Reset",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -292,10 +248,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Reset",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -305,10 +259,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Reset",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -318,10 +270,8 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Reset",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -331,10 +281,8 @@
                     "processors": "",
                     "groups": "",
                     "action": "Reset",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -344,10 +292,19 @@
                     "processors": "",
                     "groups": "",
                     "action": "LoadSecretLevel",
-                    "chainWithPrevious": false,
                     "isComposite": false,
-                    "isPartOfComposite": false,
-                    "modifiers": ""
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "604fd888-9d45-4b23-8043-eeab28e354fc",
+                    "path": "<Keyboard>/f9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LoadSecretLevel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -355,7 +312,6 @@
     "controlSchemes": [
         {
             "name": "Gamepad",
-            "basedOn": "",
             "bindingGroup": "Gamepad",
             "devices": [
                 {

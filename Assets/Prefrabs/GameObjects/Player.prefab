@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3145722817877001239}
   - component: {fileID: 8083598614934264449}
   - component: {fileID: 4529395996635230089}
+  - component: {fileID: -2633627787753712938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,9 +79,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7deec2ce293648742af446889c1fb6ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controls:
-    m_Asset: {fileID: -944628639613478452, guid: b5923e2e821547c4c86e7c7b2a76b66e,
-      type: 3}
 --- !u!114 &8083598614934264449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +112,37 @@ MonoBehaviour:
   downforce: 0
   noGravityMode: 0
   movementAllowed: 1
+--- !u!114 &-2633627787753712938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446412191628442346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: b5923e2e821547c4c86e7c7b2a76b66e,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Cube
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2446412192554290823
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +198,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -180,6 +210,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

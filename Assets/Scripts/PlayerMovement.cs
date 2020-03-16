@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Experimental.Input;
+//using UnityEngine.Experimental.Input;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {

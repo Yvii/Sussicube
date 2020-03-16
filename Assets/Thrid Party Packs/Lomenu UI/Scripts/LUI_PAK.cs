@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.Experimental.Input;
+//using UnityEngine.Experimental.Input;
+using UnityEngine.InputSystem;
 
 public class LUI_PAK : MonoBehaviour {
 

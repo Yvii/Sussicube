@@ -1,124 +1,453 @@
 // GENERATED AUTOMATICALLY FROM 'Assets/Input/PlayerControls.inputactions'
 
 using System;
-using UnityEngine;
-using UnityEngine.Experimental.Input;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 
-
-[Serializable]
-public class PlayerControls : InputActionAssetReference
+public class @PlayerControls : IInputActionCollection, IDisposable
 {
-    public PlayerControls()
+    public InputActionAsset asset { get; }
+    public @PlayerControls()
     {
-    }
-    public PlayerControls(InputActionAsset asset)
-        : base(asset)
-    {
-    }
-    [NonSerialized] private bool m_Initialized;
-    private void Initialize()
-    {
-        // Cube
-        m_Cube = asset.GetActionMap("Cube");
-        m_Cube_Move = m_Cube.GetAction("Move");
-        m_Cube_Reset = m_Cube.GetAction("Reset");
-        m_Cube_LoadSecretLevel = m_Cube.GetAction("LoadSecretLevel");
-        m_Initialized = true;
-    }
-    private void Uninitialize()
-    {
-        if (m_CubeActionsCallbackInterface != null)
+        asset = InputActionAsset.FromJson(@"{
+    ""name"": ""PlayerControls"",
+    ""maps"": [
         {
-            Cube.SetCallbacks(null);
+            ""name"": ""Cube"",
+            ""id"": ""b6af0d66-b3d4-4ea4-b123-5d276b33bb52"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""20d059a3-bcb9-4ac6-a452-fa4747d0bf72"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Reset"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""aec6c514-71c0-4e6e-a985-4f04ca400fac"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LoadSecretLevel"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8fb36097-45bd-4698-ba85-d593089f962d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Arrow"",
+                    ""id"": ""9b70f2dd-eda7-497d-85fc-6f90f401d602"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""62b268c7-1bd1-4c63-87dc-8ba5d1f03b9e"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""17f17fed-6432-435e-8dd5-2da6e1e2c976"",
+                    ""path"": ""<DualShockGamepadHID>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""529a10ea-c70a-4e92-9c42-131bba1e470b"",
+                    ""path"": ""<XboxOneGamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""175ccb3f-c51f-4215-815c-d8919bb3360b"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9a873995-8f17-4b28-972e-5da6f94abbe8"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""91d0bb4a-eaa7-4608-862d-7b7754be671f"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""9736e94b-7b6f-400c-bbda-e4ce65ccde38"",
+                    ""path"": ""<DualShockGamepadHID>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""2be6d0f2-4537-48d4-9441-b606f150ce99"",
+                    ""path"": ""<XboxOneGamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""0f647169-53c6-4386-8e1c-5a95ac149895"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""41ac3df0-8f62-49f3-a342-a817d447d7da"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5df9ae04-ede2-4446-9eed-efd890c03a62"",
+                    ""path"": ""<DualShockGamepadHID>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""11787950-14a5-4cd5-81df-891c145ae1dc"",
+                    ""path"": ""<XboxOneGamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""630859f9-a412-4577-b846-62326418f105"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""ce322715-9d15-41e3-bcfb-d0df89e5d71e"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""f8b32a36-e746-49b8-8d15-27ba8f2b7988"",
+                    ""path"": ""<DualShockGamepadHID>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""4e259bcc-5fae-4258-b6a5-a980869093a4"",
+                    ""path"": ""<XboxOneGamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""561d0403-a1e6-4084-a3a5-8d1277a8b635"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""90134ff1-7a63-4f0d-8388-5e9b7192e90b"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""82f8cd70-ef83-4d91-aed9-5bd35ad1beca"",
+                    ""path"": ""<XboxOneGamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0bda56ed-8664-40d8-b55a-e91d5b97e24e"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""067e2460-a914-4aac-a2c0-576ef648cdc4"",
+                    ""path"": ""<DualShockGamepadHID>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a924da8-7617-4d98-b211-f6e45283eaaa"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reset"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""969791f6-a472-4920-821b-795639e250cc"",
+                    ""path"": ""<Keyboard>/f8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LoadSecretLevel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""604fd888-9d45-4b23-8043-eeab28e354fc"",
+                    ""path"": ""<Keyboard>/f9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LoadSecretLevel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
-        m_Cube = null;
-        m_Cube_Move = null;
-        m_Cube_Reset = null;
-        m_Cube_LoadSecretLevel = null;
-        m_Initialized = false;
+    ],
+    ""controlSchemes"": [
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
+}");
+        // Cube
+        m_Cube = asset.FindActionMap("Cube", throwIfNotFound: true);
+        m_Cube_Move = m_Cube.FindAction("Move", throwIfNotFound: true);
+        m_Cube_Reset = m_Cube.FindAction("Reset", throwIfNotFound: true);
+        m_Cube_LoadSecretLevel = m_Cube.FindAction("LoadSecretLevel", throwIfNotFound: true);
     }
-    public void SetAsset(InputActionAsset newAsset)
+
+    public void Dispose()
     {
-        if (newAsset == asset) return;
-        var CubeCallbacks = m_CubeActionsCallbackInterface;
-        if (m_Initialized) Uninitialize();
-        asset = newAsset;
-        Cube.SetCallbacks(CubeCallbacks);
+        UnityEngine.Object.Destroy(asset);
     }
-    public override void MakePrivateCopyOfActions()
+
+    public InputBinding? bindingMask
     {
-        SetAsset(ScriptableObject.Instantiate(asset));
+        get => asset.bindingMask;
+        set => asset.bindingMask = value;
     }
+
+    public ReadOnlyArray<InputDevice>? devices
+    {
+        get => asset.devices;
+        set => asset.devices = value;
+    }
+
+    public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
+
+    public bool Contains(InputAction action)
+    {
+        return asset.Contains(action);
+    }
+
+    public IEnumerator<InputAction> GetEnumerator()
+    {
+        return asset.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public void Enable()
+    {
+        asset.Enable();
+    }
+
+    public void Disable()
+    {
+        asset.Disable();
+    }
+
     // Cube
-    private InputActionMap m_Cube;
+    private readonly InputActionMap m_Cube;
     private ICubeActions m_CubeActionsCallbackInterface;
-    private InputAction m_Cube_Move;
-    private InputAction m_Cube_Reset;
-    private InputAction m_Cube_LoadSecretLevel;
+    private readonly InputAction m_Cube_Move;
+    private readonly InputAction m_Cube_Reset;
+    private readonly InputAction m_Cube_LoadSecretLevel;
     public struct CubeActions
     {
-        private PlayerControls m_Wrapper;
-        public CubeActions(PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move { get { return m_Wrapper.m_Cube_Move; } }
-        public InputAction @Reset { get { return m_Wrapper.m_Cube_Reset; } }
-        public InputAction @LoadSecretLevel { get { return m_Wrapper.m_Cube_LoadSecretLevel; } }
+        private @PlayerControls m_Wrapper;
+        public CubeActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Cube_Move;
+        public InputAction @Reset => m_Wrapper.m_Cube_Reset;
+        public InputAction @LoadSecretLevel => m_Wrapper.m_Cube_LoadSecretLevel;
         public InputActionMap Get() { return m_Wrapper.m_Cube; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
-        public bool enabled { get { return Get().enabled; } }
-        public InputActionMap Clone() { return Get().Clone(); }
+        public bool enabled => Get().enabled;
         public static implicit operator InputActionMap(CubeActions set) { return set.Get(); }
         public void SetCallbacks(ICubeActions instance)
         {
             if (m_Wrapper.m_CubeActionsCallbackInterface != null)
             {
-                Move.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
-                Move.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
-                Move.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
-                Reset.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
-                Reset.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
-                Reset.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
-                LoadSecretLevel.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
-                LoadSecretLevel.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
-                LoadSecretLevel.cancelled -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+                @Move.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_CubeActionsCallbackInterface.OnMove;
+                @Reset.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                @Reset.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                @Reset.canceled -= m_Wrapper.m_CubeActionsCallbackInterface.OnReset;
+                @LoadSecretLevel.started -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+                @LoadSecretLevel.performed -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
+                @LoadSecretLevel.canceled -= m_Wrapper.m_CubeActionsCallbackInterface.OnLoadSecretLevel;
             }
             m_Wrapper.m_CubeActionsCallbackInterface = instance;
             if (instance != null)
             {
-                Move.started += instance.OnMove;
-                Move.performed += instance.OnMove;
-                Move.cancelled += instance.OnMove;
-                Reset.started += instance.OnReset;
-                Reset.performed += instance.OnReset;
-                Reset.cancelled += instance.OnReset;
-                LoadSecretLevel.started += instance.OnLoadSecretLevel;
-                LoadSecretLevel.performed += instance.OnLoadSecretLevel;
-                LoadSecretLevel.cancelled += instance.OnLoadSecretLevel;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Reset.started += instance.OnReset;
+                @Reset.performed += instance.OnReset;
+                @Reset.canceled += instance.OnReset;
+                @LoadSecretLevel.started += instance.OnLoadSecretLevel;
+                @LoadSecretLevel.performed += instance.OnLoadSecretLevel;
+                @LoadSecretLevel.canceled += instance.OnLoadSecretLevel;
             }
         }
     }
-    public CubeActions @Cube
-    {
-        get
-        {
-            if (!m_Initialized) Initialize();
-            return new CubeActions(this);
-        }
-    }
+    public CubeActions @Cube => new CubeActions(this);
     private int m_GamepadSchemeIndex = -1;
     public InputControlScheme GamepadScheme
     {
         get
-
         {
-            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.GetControlSchemeIndex("Gamepad");
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
             return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
-}
-public interface ICubeActions
-{
-    void OnMove(InputAction.CallbackContext context);
-    void OnReset(InputAction.CallbackContext context);
-    void OnLoadSecretLevel(InputAction.CallbackContext context);
+    public interface ICubeActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnReset(InputAction.CallbackContext context);
+        void OnLoadSecretLevel(InputAction.CallbackContext context);
+    }
 }
