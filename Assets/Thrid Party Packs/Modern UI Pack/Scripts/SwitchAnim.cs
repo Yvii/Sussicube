@@ -1,40 +1,92 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
-public class SwitchAnim : MonoBehaviour {
+namespace Michsky.UI.Hexart
+{
+    public class SwitchAnim : MonoBehaviour
+    {
+        [Header("SWITCH")]
+        public Animator switchAnimator;
 
-	[Header("SWITCH")]
-	public bool onSwitch;
-	public Button switchObject;
+        [Header("SETTINGS")]
+        [Tooltip("IMPORTANT! EVERY SWITCH MUST HAVE A DIFFERENT ID")]
+        public int switchID = 0;
+        public bool isOn;
+        public bool saveValue;
+        [Tooltip("Use it if you're using this switch first time. 1 = ON, and 0 = OFF")]
+        [Range(0, 1)] public int playerPrefsHelper;
 
-	[Header("ANIMATORS")]
-	public Animator switchAnimator;
-	public Animator onAnimator;
-	public Animator offAnimator;
+        public UnityEvent OffEvents;
+        public UnityEvent OnEvents;
 
-	[Header("ANIM NAMES")]
-	public string switchAnim;
-	public string onTransition;
-	public string offTransition;
+        private Button offButton;
+        private Button onButton;
 
-	void Start ()
-	{
-		this.switchObject.GetComponent<Button>();
-		switchObject.onClick.AddListener(TaskOnClick);
-	}
+        private string onTransition = "Switch On";
+        private string offTransition = "Switch Off";
 
-	void TaskOnClick()
-	{
-		switchAnimator.Play(switchAnim);
+        void Start()
+        {
+            playerPrefsHelper = PlayerPrefs.GetInt(switchID + "Switch");
 
-		if (onSwitch == true) 
-		{
-			offAnimator.Play (offTransition);
-		} 
+            if (saveValue == true)
+            {
+                if (playerPrefsHelper == 1)
+                {
+                    OnEvents.Invoke();
+                    switchAnimator.Play(onTransition);
+                    isOn = true;
+                }
 
-		else
-		{
-			onAnimator.Play(onTransition);
-		}
-	}
+                else
+                {
+                    OffEvents.Invoke();
+                    switchAnimator.Play(offTransition);
+                    isOn = false;
+                }
+            }
+
+            else
+            {
+                if (isOn == true)
+                {
+                    switchAnimator.Play(onTransition);
+                    OnEvents.Invoke();
+                    isOn = true;
+                }
+
+                else
+                {
+                    switchAnimator.Play(offTransition);
+                    OffEvents.Invoke();
+                    isOn = false;
+                }
+            }
+        }
+
+        public void AnimateSwitch()
+        {
+            if (isOn == true)
+            {
+                OffEvents.Invoke();
+                switchAnimator.Play(offTransition);
+                isOn = false;
+                playerPrefsHelper = 0;
+            }
+
+            else
+            {
+                OnEvents.Invoke();
+                switchAnimator.Play(onTransition);
+                isOn = true;
+                playerPrefsHelper = 1;
+            }
+
+            if (saveValue == true)
+            {
+                PlayerPrefs.SetInt(switchID + "Switch", playerPrefsHelper);
+            }
+        }
+    }
 }

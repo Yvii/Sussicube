@@ -1,35 +1,62 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ToggleAnim : MonoBehaviour {
+namespace Michsky.UI.Hexart
+{
+    public class ToggleAnim : MonoBehaviour
+    {
+        [Header("TOGGLE")]
+        public Toggle toggleObject;
 
+        [Header("ANIMATORS")]
+        public Animator toggleAnimator;
 
-	[Header("TOGGLE")]
-	public Toggle toggleObject;
+        [Header("ANIM NAMES")]
+        public string toggleOn;
+        public string toggleOff;
 
-	[Header("ANIMATORS")]
-	public Animator toggleAnimator;
+        void Start()
+        {
+            this.toggleObject.GetComponent<Toggle>();
+            toggleObject.onValueChanged.AddListener(TaskOnClick);
 
-	[Header("ANIM NAMES")]
-	public string toggleOn;
-	public string toggleOff;
+            if (toggleObject.isOn)
+            {
+                toggleAnimator.Play(toggleOn);
+            }
 
-	void Start ()
-	{
-		this.toggleObject.GetComponent<Toggle>();
-		toggleObject.onValueChanged.AddListener(TaskOnClick);
-	}
+            else
+            {
+                toggleAnimator.Play(toggleOff);
+            }
+        }
 
-	void TaskOnClick(bool value)
-	{
-		if (toggleObject.isOn) 
-		{
-			toggleAnimator.Play(toggleOn);
-		} 
+        void TaskOnClick(bool value)
+        {
+            if (toggleObject.isOn)
+            {
+                toggleAnimator.Play(toggleOn);
+            }
 
-		else 
-		{
-			toggleAnimator.Play(toggleOff);
-		}
-	}
+            else
+            {
+                toggleAnimator.Play(toggleOff);
+            }
+        }
+
+        public void AnimateToggle()
+        {
+            if (toggleObject.isOn)
+            {
+                toggleAnimator.Play(toggleOff);
+                toggleObject.isOn = false;
+            }
+
+            else
+            {
+                toggleAnimator.Play(toggleOn);
+                toggleObject.isOn = true;
+            }
+        }
+    }
 }
