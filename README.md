@@ -1,5 +1,5 @@
 # Sussicube
-Sussicube is a 3D Jump & Run Game
+Sussicube is a 3D Jump & Run Game made in Unity
 
 Currently in Alpha
 
