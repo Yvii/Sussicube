@@ -7,9 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public float forwardforce = 6000f;
+    public float forwardforce = 3000f;
     public float sideforce = 100f;
-    public float jumpforce = 1000f;
+    public float jumpforce = 500f;
     public float downforce = 0f;
 
     public bool noGravityMode = false;
